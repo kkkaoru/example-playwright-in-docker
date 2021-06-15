@@ -1,0 +1,10 @@
+version: '3'
+services:
+  playwright:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./app/:/usr/src/app/
+    # Set to true if the container will keep running
+    # tty: true
